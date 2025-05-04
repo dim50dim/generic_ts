@@ -22,7 +22,7 @@ function t02(arg1, arg2) {
 }
 document.querySelector('.b-2').addEventListener('click', function () {
     console.log(t02(5, 6));
-    // console.log(t02('hello', 'zilo'));
+    console.log(t02('hello', 'zilo'));
 });
 // Task 03
 // Перепишите функцию t03 на дженериках, так, чтобы работа функции со всеми типами данных указанных в запуске по нажатию кнопки были корректны.

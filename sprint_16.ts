@@ -26,7 +26,7 @@ function t02 <T>(arg1 : T, arg2 : T,) : T {
 }
 document.querySelector('.b-2').addEventListener('click', function (): void {
     console.log(t02(5, 6));
-    // console.log(t02('hello', 'zilo'));
+    console.log(t02('hello', 'zilo'));
 });
 
 
