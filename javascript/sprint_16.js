@@ -14,6 +14,9 @@ document.querySelector('.b-1').addEventListener('click', function () {
 });
 // Task 02
 // Перепишите функцию t02 на дженериках, так, чтобы работа функции со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t02(arg1: number, arg2: number): number {
+//     return (arg1 > arg2) ? arg1 : arg2;
+// }
 function t02(arg1, arg2) {
     return (arg1 > arg2) ? arg1 : arg2;
 }

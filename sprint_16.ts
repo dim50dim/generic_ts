@@ -18,10 +18,12 @@ document.querySelector('.b-1').addEventListener('click', function (): void {
 // Task 02
 // Перепишите функцию t02 на дженериках, так, чтобы работа функции со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
 
-function t02(arg1: number, arg2: number): number {
+// function t02(arg1: number, arg2: number): number {
+//     return (arg1 > arg2) ? arg1 : arg2;
+// }
+function t02 <T>(arg1 : T, arg2 : T,) : T {
     return (arg1 > arg2) ? arg1 : arg2;
 }
-
 document.querySelector('.b-2').addEventListener('click', function (): void {
     console.log(t02(5, 6));
     // console.log(t02('hello', 'zilo'));
