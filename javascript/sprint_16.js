@@ -77,39 +77,51 @@ document.querySelector('.b-6').addEventListener('click', function () {
 });
 // Task 07
 // Перепишите функцию t07 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t07(id: number, name: string): string {
+//     return (typeof (id) + ", " + typeof (name));
+// }
 function t07(id, name) {
     return (typeof (id) + ", " + typeof (name));
 }
 document.querySelector('.b-7').addEventListener('click', function () {
     console.log(t07(3, 'Rodjer D'));
-    // console.log(t07('Fortuna Major', 57));
+    console.log(t07('Fortuna Major', 57));
 });
 // Task 08
 // Перепишите функцию t08 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t08 (data: number[]): string {
+//     return data.join('_');
+// }
 function t08(data) {
     return data.join('_');
 }
 document.querySelector('.b-8').addEventListener('click', function () {
     console.log(t08([3, 14, 15]));
-    // console.log(t08([true, true, false, true]));
+    console.log(t08([true, true, false, true]));
 });
 // Task 09
 // Перепишите функцию t09 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t09 (data_1: number[], data_2: number[]): number[] {
+//     return [...data_1, ...data_2];
+// }
 function t09(data_1, data_2) {
     return [...data_1, ...data_2];
 }
 document.querySelector('.b-9').addEventListener('click', function () {
     console.log(t09([3, 14, 15], [92, 6]));
-    // console.log(t09(['mea', 'culpa'], ['mala', 'fides']));
+    console.log(t09(['mea', 'culpa'], ['mala', 'fides']));
 });
 // Task 10
 // Перепишите функцию t10 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны. Any должен быть заменен типом.
+// function t10(data_1: number[], data_2: string[]): any {
+//     return [...data_1, ...data_2];
+// }
 function t10(data_1, data_2) {
     return [...data_1, ...data_2];
 }
 document.querySelector('.b-10').addEventListener('click', function () {
-    // console.log(t10([3, 14, 15], ['mala', 'fides']));
-    // console.log(t10(['mea', 'culpa'], [92, 6]));
+    console.log(t10([3, 14, 15], ['mala', 'fides']));
+    console.log(t10(['mea', 'culpa'], [92, 6]));
 });
 // Task 11
 // Перепишите функцию t11 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
