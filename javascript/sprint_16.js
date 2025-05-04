@@ -50,14 +50,17 @@ document.querySelector('.b-4').addEventListener('click', function () {
 });
 // Task 05
 // Перепишите функцию t05 на дженериках, так, чтобы работа функции со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t05 (arg: number): string {
+//     return arg.toString();
+// }
 function t05(arg) {
     return arg.toString();
 }
 document.querySelector('.b-5').addEventListener('click', function () {
     console.log(t05(1));
-    // console.log(t05(true));
-    // console.log(t05([4, 5, 6]));
-    // console.log(t05('jojoba'));
+    console.log(t05(true));
+    console.log(t05([4, 5, 6]));
+    console.log(t05('jojoba'));
 });
 // Task 06
 // Перепишите функцию t06 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
