@@ -71,23 +71,26 @@ document.querySelector('.b-4').addEventListener('click', function (): void {
    }
 document.querySelector('.b-5').addEventListener('click', function (): void {
     console.log(t05(1));
-    console.log(t05(true));
-    console.log(t05([4, 5, 6]));
-    console.log(t05('jojoba'));
+    // console.log(t05(true));
+    // console.log(t05([4, 5, 6]));
+    // console.log(t05('jojoba'));
 });
 
 
 // Task 06
 // Перепишите функцию t06 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
 
-function t06 (arg: number[]): number {
-    return arg.reduce((accum, item) => item > accum ? item : accum);
-}
+// function t06 (arg: number[]): number {
+//     return arg.reduce((accum, item) => item > accum ? item : accum);
+// }
 
+ function t06 <T> (arg:T[]) : T {
+    return arg.reduce((accum,item) => item > accum ? item : accum );
+ }
 document.querySelector('.b-6').addEventListener('click', function (): void {
     console.log(t06([3, -1, 5, 7, 1, 12, -4, 6, 2]));
-    // console.log(t06(['test', 'la', 'caputchi', 'udel', 'boro']));
-    // console.log(t06([true, false, true, false]));
+    console.log(t06(['test', 'la', 'caputchi', 'udel', 'boro']));
+    console.log(t06([true, false, true, false]));
 });
 
 
