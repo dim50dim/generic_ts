@@ -38,12 +38,15 @@ document.querySelector('.b-3').addEventListener('click', function () {
 });
 // Task 04
 // Перепишите функцию t04 на дженериках, так, чтобы работа функции со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t04 (arg: number): number[] {
+//     return [arg];
+// }
 function t04(arg) {
     return [arg];
 }
 document.querySelector('.b-4').addEventListener('click', function () {
     console.log(t04(1));
-    // console.log(t04(true));
+    console.log(t04(true));
 });
 // Task 05
 // Перепишите функцию t05 на дженериках, так, чтобы работа функции со всеми типами данных указанных в запуске по нажатию кнопки были корректны.

@@ -48,13 +48,15 @@ document.querySelector('.b-3').addEventListener('click', function (): void {
 // Task 04
 // Перепишите функцию t04 на дженериках, так, чтобы работа функции со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
 
-function t04 (arg: number): number[] {
+// function t04 (arg: number): number[] {
+//     return [arg];
+// }
+function t04 <T> (arg: T) : T[] {
     return [arg];
 }
-
 document.querySelector('.b-4').addEventListener('click', function (): void {
     console.log(t04(1));
-    // console.log(t04(true));
+    console.log(t04(true));
 });
 
 
