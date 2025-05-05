@@ -238,7 +238,7 @@ function t18(array) {
 }
 document.querySelector('.b-18').addEventListener('click', function () {
     console.log(t18([22, 55, 44, 33]));
-    // console.log(t18(['per', 'aspera',  'ad',  'astra' ]));
+    console.log(t18(['per', 'aspera', 'ad', 'astra']));
 });
 // Task 19
 // Напишите функцию t19, которая реализует механизм проверки массива на наличие пропущенных индексов. Примените механизм дженериков.

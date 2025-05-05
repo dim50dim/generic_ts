@@ -284,7 +284,7 @@ document.querySelector('.b-17').addEventListener('click', function (): void {
 // Task 18
 // Перепишите функцию t18 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
 
-function t18 (array: number[]): number[] {
+function t18<T> (array: T[]): T[] {
     for (let i:number = array.length - 1; i > 0; i--) { 
         const j : number = Math.floor(Math.random() * (i + 1)); 
         [array[i], array[j]] = [array[j], array[i]]; 
@@ -294,7 +294,7 @@ function t18 (array: number[]): number[] {
 
 document.querySelector('.b-18').addEventListener('click', function (): void {
     console.log(t18([22, 55, 44, 33]));
-    // console.log(t18(['per', 'aspera',  'ad',  'astra' ]));
+    console.log(t18(['per', 'aspera',  'ad',  'astra' ]));
 });
 
 // Task 19
