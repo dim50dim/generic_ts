@@ -195,14 +195,16 @@ document.querySelector('.b-12').addEventListener('click', function (): void {
 // Task 13
 // Перепишите функцию t13 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
 
-function t13 (data: string): boolean {
+// function t13 (data: string): boolean {
+//     return data.toString() === t12(data);
+// }
+  function t13 <T> (data: T) : boolean {
     return data.toString() === t12(data);
-}
-
+  }
 document.querySelector('.b-13').addEventListener('click', function (): void {
     console.log(t13('helloolleh'));
-    // console.log(t13(543));
-    // console.log(t13(1771));
+    console.log(t13(543));
+    console.log(t13(1771));
 });
 
 
