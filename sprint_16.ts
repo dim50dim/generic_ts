@@ -228,18 +228,22 @@ document.querySelector('.b-14').addEventListener('click', function (): void {
 // Task 15
 // Перепишите функцию t15 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
 
-function t15 (data: number[]): number[] {
-    const t: number[] = [];
+// function t15 (data: number[]): number[] {
+//     const t: number[] = [];
+//     data.forEach(item => t.push(item));
+//     return t;
+// }
+   function t15<T> (data:T[]) : T[]{
+    const t : T[] = [];
     data.forEach(item => t.push(item));
     return t;
-}
-
+   }
 document.querySelector('.b-15').addEventListener('click', function (): void {
     console.log(t15([22, 33, , , , , , 55]));
-    // const arr: string[] = [];
-    // arr[0] = 'hello';
-    // arr[1000] = 'halo';
-    // console.log(t15(arr));
+    const arr: string[] = [];
+    arr[0] = 'hello';
+    arr[1000] = 'halo';
+    console.log(t15(arr));
 });
 
 

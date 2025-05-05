@@ -184,6 +184,11 @@ document.querySelector('.b-14').addEventListener('click', function () {
 });
 // Task 15
 // Перепишите функцию t15 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t15 (data: number[]): number[] {
+//     const t: number[] = [];
+//     data.forEach(item => t.push(item));
+//     return t;
+// }
 function t15(data) {
     const t = [];
     data.forEach(item => t.push(item));
@@ -191,10 +196,10 @@ function t15(data) {
 }
 document.querySelector('.b-15').addEventListener('click', function () {
     console.log(t15([22, 33, , , , , , 55]));
-    // const arr: string[] = [];
-    // arr[0] = 'hello';
-    // arr[1000] = 'halo';
-    // console.log(t15(arr));
+    const arr = [];
+    arr[0] = 'hello';
+    arr[1000] = 'halo';
+    console.log(t15(arr));
 });
 // Task 16
 // Перепишите функцию t16 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
