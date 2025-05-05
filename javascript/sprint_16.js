@@ -218,9 +218,11 @@ document.querySelector('.b-16').addEventListener('click', function () {
 });
 // Task 17
 // Напишите функцию t17, которая реализует механизм indexOf для типов массивов number[], string[], boolean[]. Примените механизм дженериков. 
+// function t17 (arr: number[], elem: number): number {
+//     return arr.indexOf(elem);
+// }
 function t17(arr, elem) {
-    // сотрите return 1 и напишите код
-    return 1;
+    return arr.indexOf(elem);
 }
 document.querySelector('.b-17').addEventListener('click', function () {
     console.log(t17([22, 55, 44, 33], 33));
