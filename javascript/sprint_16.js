@@ -145,12 +145,15 @@ document.querySelector('.b-11').addEventListener('click', function () {
 });
 // Task 12
 // Перепишите функцию t12 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t12 (data: string): string {
+//     return data.toString().split('').reverse().join('');
+// }
 function t12(data) {
     return data.toString().split('').reverse().join('');
 }
 document.querySelector('.b-12').addEventListener('click', function () {
     console.log(t12('hello'));
-    // console.log(t12(543));
+    console.log(t12(543));
 });
 // Task 13
 // Перепишите функцию t13 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.

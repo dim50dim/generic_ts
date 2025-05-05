@@ -184,10 +184,12 @@ document.querySelector('.b-11').addEventListener('click', function (): void {
 // function t12 (data: string): string {
 //     return data.toString().split('').reverse().join('');
 // }
-  
+  function t12 <T> (data: T) : string {
+    return data.toString().split('').reverse().join('');
+  }
 document.querySelector('.b-12').addEventListener('click', function (): void {
     console.log(t12('hello'));
-    // console.log(t12(543));
+    console.log(t12(543));
 });
 
 // Task 13
