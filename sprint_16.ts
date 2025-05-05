@@ -211,15 +211,18 @@ document.querySelector('.b-13').addEventListener('click', function (): void {
 // Task 14
 // Перепишите функцию t14 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
 
-function t14 (data: number[]): (number | null) {
+// function t14 (data: number[]): (number | null) {
+//     return (data.length !== 0) ? data[0] : null;
+// }
+  function t14<T> (data : T[]) : (T | null) {
     return (data.length !== 0) ? data[0] : null;
-}
+  }
 
 document.querySelector('.b-14').addEventListener('click', function (): void {
     console.log(t14([2, 3, 4]));
-    // console.log(t14([]));
-    // console.log(t14(['a', 'b', 'c']));
-    // console.log(t14([55, 'b', 'c']));
+    console.log(t14([]));
+    console.log(t14(['a', 'b', 'c']));
+    console.log(t14([55, 'b', 'c']));
 });
 
 // Task 15
