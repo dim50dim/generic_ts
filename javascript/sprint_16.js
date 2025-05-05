@@ -129,7 +129,7 @@ document.querySelector('.b-10').addEventListener('click', function () {
 //     return Number(data);
 // }
 function t11(data) {
-    return;
+    return Number(data);
 }
 document.querySelector('.b-11').addEventListener('click', function () {
     let result;

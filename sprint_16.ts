@@ -159,6 +159,9 @@ document.querySelector('.b-10').addEventListener('click', function (): void {
 // function t11 (data: number): number {
 //     return Number(data);
 // }
+function t11 <T> (data: T) :number{
+    return Number(data);
+}
  
 document.querySelector('.b-11').addEventListener('click', function (): void {
     let result;
@@ -178,10 +181,10 @@ document.querySelector('.b-11').addEventListener('click', function (): void {
 // Task 12
 // Перепишите функцию t12 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
 
-function t12 (data: string): string {
-    return data.toString().split('').reverse().join('');
-}
-
+// function t12 (data: string): string {
+//     return data.toString().split('').reverse().join('');
+// }
+  
 document.querySelector('.b-12').addEventListener('click', function (): void {
     console.log(t12('hello'));
     // console.log(t12(543));
