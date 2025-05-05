@@ -203,15 +203,18 @@ document.querySelector('.b-15').addEventListener('click', function () {
 });
 // Task 16
 // Перепишите функцию t16 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t16 (data_1: number[], data_2: number[]): boolean {
+//     return (data_1.toString() === data_2.toString());
+// }
 function t16(data_1, data_2) {
     return (data_1.toString() === data_2.toString());
 }
 document.querySelector('.b-16').addEventListener('click', function () {
     console.log(t16([22, 33], [22, 33]));
-    // console.log(t16([22, 33, [44, 55]], [22, 33, [44, 55]]));
-    // console.log(t16([22, 33, [44, 55]], [22, 33, [44, 5]]));
-    // console.log(t16(['non', 'vi'], ['non', 'vi']));
-    // console.log(t16(['vi', 'non'], ['non', 'vi']));
+    console.log(t16([22, 33, [44, 55]], [22, 33, [44, 55]]));
+    console.log(t16([22, 33, [44, 55]], [22, 33, [44, 5]]));
+    console.log(t16(['non', 'vi'], ['non', 'vi']));
+    console.log(t16(['vi', 'non'], ['non', 'vi']));
 });
 // Task 17
 // Напишите функцию t17, которая реализует механизм indexOf для типов массивов number[], string[], boolean[]. Примените механизм дженериков. 
