@@ -125,8 +125,11 @@ document.querySelector('.b-10').addEventListener('click', function () {
 });
 // Task 11
 // Перепишите функцию t11 на дженериках, так, чтобы запуски со всеми типами данных указанных в запуске по нажатию кнопки были корректны.
+// function t11 (data: number): number {
+//     return Number(data);
+// }
 function t11(data) {
-    return Number(data);
+    return;
 }
 document.querySelector('.b-11').addEventListener('click', function () {
     let result;
