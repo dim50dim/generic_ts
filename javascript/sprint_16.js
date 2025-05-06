@@ -244,18 +244,18 @@ document.querySelector('.b-18').addEventListener('click', function () {
 // Напишите функцию t19, которая реализует механизм проверки массива на наличие пропущенных индексов. Примените механизм дженериков.
 function t19(arr) {
     for (let i = 0; i < arr.length; i++) {
-        if (i === undefined)
+        if (arr[i] === undefined) {
             return true;
-        else
-            return false;
+        }
     }
+    return false;
 }
 document.querySelector('.b-19').addEventListener('click', function () {
     console.log(t19([22, 55, 44, 33]));
-    // const arr: string[] = [];
-    // arr[0] = 'per';
-    // arr[1000] = 'lovem';
-    // console.log(t19(arr));
+    const arr = [];
+    arr[0] = 'per';
+    arr[1000] = 'lovem';
+    console.log(t19(arr));
 });
 // Task 20
 // Напишите функцию t20, которая реализует механизм стека. Если второй аргумент функции существует, то значение добавляется в конец массива и возвращается массив. Если не передано - возвращается последний элемент массива. Примените механизм дженериков.

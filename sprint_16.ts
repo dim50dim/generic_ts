@@ -302,18 +302,21 @@ document.querySelector('.b-18').addEventListener('click', function (): void {
 
 function t19 <T>(arr: T[]): boolean {
     for(let i : number = 0; i <arr.length; i++){
-        if(i === undefined) return true
-        else return false;
-    }
+        if(arr[i] === undefined) {
+            return true;
+        }
+         }
+        return false;
+   
 }
 
 document.querySelector('.b-19').addEventListener('click', function (): void {
     console.log(t19([22, 55, 44, 33]));
 
-    // const arr: string[] = [];
-    // arr[0] = 'per';
-    // arr[1000] = 'lovem';
-    // console.log(t19(arr));
+    const arr: string[] = [];
+    arr[0] = 'per';
+    arr[1000] = 'lovem';
+    console.log(t19(arr));
 });
 
 // Task 20
