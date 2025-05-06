@@ -302,11 +302,9 @@ document.querySelector('.b-18').addEventListener('click', function (): void {
 
 function t19 <T>(arr: T[]): boolean {
     for(let i : number = 0; i <arr.length; i++){
-        if(arr[i] === undefined) {
-            return true;
-        }
+        if(arr[i] === undefined) return true;
          }
-        return false;
+        return false
    
 }
 
