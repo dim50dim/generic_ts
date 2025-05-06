@@ -300,9 +300,8 @@ document.querySelector('.b-18').addEventListener('click', function (): void {
 // Task 19
 // Напишите функцию t19, которая реализует механизм проверки массива на наличие пропущенных индексов. Примените механизм дженериков.
 
-function t19 (arr: number[]): boolean {
-    // сотрите return true и напишите код
-    return true;
+function t19 <T>(arr: T[]): boolean {
+
 }
 
 document.querySelector('.b-19').addEventListener('click', function (): void {
