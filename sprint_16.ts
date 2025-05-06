@@ -320,12 +320,18 @@ document.querySelector('.b-19').addEventListener('click', function (): void {
 // Task 20
 // Напишите функцию t20, которая реализует механизм стека. Если второй аргумент функции существует, то значение добавляется в конец массива и возвращается массив. Если не передано - возвращается последний элемент массива. Примените механизм дженериков.
 
-function t20 (arr: number[], data ?: number ): (number | number[])  {
-    // сотрите return 0 и напишите код
-    return 0;
-}
+// function t20 (arr: number[], data ?: number ): (number | number[])  {
+//        if (data === undefined) return (arr[arr.length -1] );
+//        else  arr.push(data);
+//        return arr;
+// }
 
+  function t20<T> (arr: T[], data? : T): T | T[]{
+    if(data === undefined) return  arr[arr.length - 1];
+    else arr.push(data);
+    return arr;
+  }
 document.querySelector('.b-20').addEventListener('click', function (): void {
     console.log(t20([22, 55, 44, 33]));
-    // console.log(t20(['primum', 'non', 'nocere'], 'primo'));
+    console.log(t20(['primum', 'non', 'nocere'], 'primo'));
 });
